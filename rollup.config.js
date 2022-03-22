@@ -4,7 +4,7 @@ import filesize from 'rollup-plugin-filesize';
 const config = {
   input: 'src/index.js',
   output: {
-    file: 'dist/index.esm.js',
+    file: 'dist/esm/index.js',
     format: 'esm',
   },
   external: [/@babel\/runtime/, 'react'],

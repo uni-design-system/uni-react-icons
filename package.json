@@ -1,20 +1,21 @@
 {
   "name": "@uni-design-system/uni-react-icons",
   "version": "0.0.1",
-  "description": "SVG-based React icon components",
+  "description": "React component icon library for the UNI Design System.",
   "keywords": [
     "React",
     "SVG",
     "Icons"
   ],
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "prebuild": "rimraf src && rimraf dist",
     "build": "npm run svgr && rollup -c",
-    "svgr": "svgr --icon --title-prop --replace-attr-values '#1D1D1D=currentColor' -d src -- assets"
+    "svgr": "svgr -- icons"
   },
   "author": "George English",
   "license": "MIT",
