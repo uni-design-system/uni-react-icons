@@ -1,6 +1,6 @@
 {
   "name": "@uni-design-system/uni-react-icons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React component icon library for the UNI Design System.",
   "keywords": [
     "React",
@@ -27,6 +27,7 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "@rollup/plugin-babel": "^5.3.0",
+    "@svgr/babel-plugin-transform-svg-component": "^6.2.0",
     "@svgr/cli": "^6.1.2",
     "@types/node": "^17.0.22",
     "@types/react": "^17.0.41",
