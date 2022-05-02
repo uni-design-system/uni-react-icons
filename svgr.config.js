@@ -21,7 +21,6 @@ module.exports = {
       const ${variables.componentName} = ({ title, titleId, color, height = '24px', width = '24px' }: SVGRProps) => (
         ${variables.jsx}
       );
-       
       ${variables.exports};
     `
   },
