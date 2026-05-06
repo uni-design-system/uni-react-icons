@@ -38,13 +38,13 @@ module.exports = {
   indexTemplate: (filePaths) => {
 
     const importIcons = filePaths.map((filePath) => {
-      const basename = path.basename(filePath, path.extname(filePath))
+      const basename = path.basename(filePath.path, path.extname(filePath.path))
       const exportName = /^\d/.test(basename) ? `Svg${basename}` : basename
       return `import ${exportName} from './${basename}'`
     }).join(';\n');
 
     const iconNames = filePaths.map((filePath) => {
-      const basename = path.basename(filePath, path.extname(filePath))
+      const basename = path.basename(filePath.path, path.extname(filePath.path))
       const exportName = /^\d/.test(basename) ? `Svg${basename}` : basename
       return `${ exportName.charAt(0).toLowerCase() + exportName.slice(1)}`;
     });
@@ -54,7 +54,7 @@ module.exports = {
     const keys = `;\n export const IconKeys = ["${iconNames.join('", "')}"];\n`;
 
     const exportMap = filePaths.map((filePath) => {
-      const basename = path.basename(filePath, path.extname(filePath))
+      const basename = path.basename(filePath.path, path.extname(filePath.path))
       const exportName = /^\d/.test(basename) ? `Svg${basename}` : basename
       return `${ exportName.charAt(0).toLowerCase() + exportName.slice(1)}: ${exportName}`;
     }).join(',\n');
