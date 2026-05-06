@@ -3,6 +3,10 @@
   "author": "George English",
   "license": "MIT",
   "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
   "description": "React component icon library for the UNI Design System.",
   "keywords": [
     "React",
