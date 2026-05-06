@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com"
+    "url": "https://github.com/uni-design-system/uni-react-icons"
   },
   "description": "React component icon library for the UNI Design System.",
   "keywords": [
